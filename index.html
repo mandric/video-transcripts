@@ -1,0 +1,15 @@
+<script type="importmap">
+  {
+    "imports": {
+      "centra": "https://esm.sh/phin@2.6.0",
+      "phin": "https://esm.sh/phin@3.5.0",
+      "local-youtube-transcript":   "./node_modules/youtube-transcript/dist/youtube-transcript.esm.js",
+      "youtube-transcript":   "https://esm.sh/youtube-transcript@1.0.6"
+    }
+  }
+</script>
+<script type="module">
+  const vidId = "DibH4GRRWQU"
+  import { YoutubeTranscript } from "youtube-transcript";
+  YoutubeTranscript.fetchTranscript(vidId).then(console.log);
+</script>
